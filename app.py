@@ -19,7 +19,7 @@ st.set_page_config(
 # ==========================================
 @st.cache_resource
 def load_assets():
-    model = tf.keras.models.load_model('diabetes_model.keras')
+    model = tf.keras.models.load_model('diabetes_model.h5')
     scaler = joblib.load('scaler.pkl')
     return model, scaler
 
